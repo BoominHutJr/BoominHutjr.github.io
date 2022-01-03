@@ -41,6 +41,19 @@ li{
 .text--color{
     color:rgb(119, 33, 33); ;
 }
+
+section:nth-child(even){
+    background-color: rgb(228, 222, 222);
+}
+
+.container{
+    padding: 50px 0;
+}
+
+.section__title{
+    margin-bottom: 20px;
+}
+
 /*NAVIGATION BAR*/
 
 nav{
@@ -83,6 +96,8 @@ nav{
     transition: all 350ms ease;
     
 }
+
+
 
 /*ABOUT ME*/
 #about-me{
@@ -137,5 +152,54 @@ nav{
 
 .about-me__img{
     padding-top: 60px;
+    padding-bottom: 60px;
     width: 100%;
+}
+
+/* TECH / LANG */
+.language__img{
+    width: 100%;
+    max-width: 100px;
+    transition: all 250ms;
+}
+
+.language__img:hover{
+    filter: brightness(80%);
+    opacity: 0.85;
+    transform: scale(0.9);
+}
+
+.language{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img--wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 33px 22px;
+}
+
+.language__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.langauge__name{
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 300ms;
+    font-size: 20px;
+    
+}
+
+.language:hover .langauge__name{ 
+    transform: scale(1);
+    opacity: 1;
 }
