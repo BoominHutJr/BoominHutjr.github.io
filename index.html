@@ -14,14 +14,14 @@
         <nav>
             <div class="personal__logo"> Ayman Fahsi </div>
             <ul class="nav__link--list">
-                <li>
-                    <a href="" class="nav__link--anchor">Languages</a>
+                <li class="nav__link">
+                    <a href="#languages" class="nav__link--anchor">Languages</a>
                 </li>
-                <li>
-                    <a href="" class="nav__link--anchor">Projects</a>
+                <li class="nav__link">
+                    <a href="#projects" class="nav__link--anchor">Projects</a>
                 </li>
-                <li>
-                    <a href="" class="
+                <li class="nav__link">
+                    <a href="mailto:afahsi@hawk.ii.edu" class="
                         nav__link--anchor
                         nav__link--anchor-primary
                     ">Contact</a>
@@ -43,7 +43,7 @@
                         look forward achieving my long-term goal of creating my own personalized AI.
                     </p>
                     <div class="about-me__link">
-                        <a href="" class="about-me__link">
+                        <a href="assets/Resume Ayman Fahsi (Summer 2021).pdf" class="about-me__link">
                             Resume
                         </a>
                         <a href="https://github.com/BoominHutJr" class="about-me__link">
@@ -105,15 +105,15 @@
                             <img src="./assets/html-svgrepo-com.svg" class="language__img"
                                 style="max-width: 100px; width: 100%;" alt="">
                         </figure>
-                        <span class="langauge__name text--color">HTML</span>
+                        <span class="langauge__name text--color">HTML/CSS</span>
                     </div>
 
                     <div class="language">
                         <figure class="language__img--wrapper">
-                            <img src="./assets/css-svgrepo-com.svg" class="language__img"
+                            <img src="./assets/r-svgrepo-com.svg" style="width: 1000px;;" class="language__img"
                                 style="max-width: 100px; width: 100%;" alt="">
                         </figure>
-                        <span class="langauge__name text--color">CSS</span>
+                        <span class="langauge__name text--color">R</span>
                     </div>
 
                 </div>
@@ -131,35 +131,18 @@
                     <!-- huffman Coding -->
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/-Insert_image_here-.svg" class="project__image" alt="">
+                            <img src="./assets/huffman visualizer.png" class="project__image" alt="">
                             <div class="project__description">
                                 <h3 class="project__description--title">Huffman Coding</h3>
                                 <h4 class="project__description--subtitle">Python3</h4>
-                                <p class="project__description--para"> dummy textdummy textdummy textdummy textdummy
-                                    textdummy textdummy textdummy text</p>
+                                <p class="project__description--para"> Huffman Encoding is one of the simplest
+                                    algorithms known to compress data.
+                                    In this project my team and I have implemented huffman
+                                    encoding to an output file, and then decoding form that file.</p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/BoominHutJr/HuffmanCodingVisualizer"
+                                    <a href="https://github.com/BoominHutJr/HuffmanCodingVisualizer" target="blank"
                                         class="project__description--link">
-                                        Click Here
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- trainyea -->
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/-Insert_image_here-.svg" class="project__image" alt="">
-                            <div class="project__description">
-                                <h3 class="project__description--title">Demonhacks 2019 Hackathon Solution</h3>
-                                <h4 class="project__description--subtitle">Java, SQL, HTML, CSS, PHP</h4>
-                                <p class="project__description--para"> dummy textdummy textdummy textdummy textdummy
-                                    textdummy textdummy textdummy text</p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/LukeLeonard1/TrainYea"
-                                        class="project__description--link">
-                                        Click Here
+                                        View source files here!
                                     </a>
                                 </div>
                             </div>
@@ -167,18 +150,49 @@
                     </li>
 
                     <!-- Employee admin thing -->
-                    <li class="project" style="margin-bottom: 40px;">
+                    <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/-Insert_image_here-.svg" class="project__image" alt="">
+                            <img src="./assets/employee dashboard.png" class="project__image" alt="">
                             <div class="project__description">
                                 <h3 class="project__description--title">Employee Administration Database</h3>
                                 <h4 class="project__description--subtitle">Java, SQL</h4>
-                                <p class="project__description--para"> dummy textdummy textdummy textdummy textdummy
-                                    textdummy textdummy textdummy text</p>
+                                <p class="project__description--para"> This project simulates an employee payroll system
+                                    that allows the management of employee salary payments in addition to other
+                                    features. This project is written entirely in Java, but pulls data from an SQL
+                                    database server.</p>
                                 <div class="project__description--links">
-                                    <a href="" class="project__description--link">
-                                        Click Here (add to github first)
+                                    <a href="https://github.com/BoominHutJr/Employee-Payroll-Management-System"
+                                        target="blank" class="project__description--link">
+                                        View source files here!
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- trainyea -->
+                    <li class="project" style="margin-bottom: 40px;">
+                        <div class="project__wrapper">
+                            <img src="./assets/demonhacks logo.png" class="project__image" alt="">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Demonhacks 2019 Hackathon Solution</h3>
+                                <h4 class="project__description--subtitle">(Awarded Best Transit Hack)</h4>
+                                <h4 class="project__description--subtitle">Java, SQL, HTML, CSS, PHP</h4>
+                                <p class="project__description--para"> During the 2019 Demonhacks 24hr Hackathon, my
+                                    team and I decided to solve CTA Train congestion by developing a Capacity Tracker
+                                    System that would display onto a monitor or mobile device.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/LukeLeonard1/TrainYea" target="blank"
+                                        class="project__description--link">
+                                        View source files here!
+                                    </a>
+                                </div>
+                                <div class="project__description--links">
+                                <a href="https://devpost.com/software/trainyea" target="blank"
+                                    class="project__description--link" style="font-size: smaller;">
+                                    (View Hackathon Description Page Here)
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -195,29 +209,26 @@
         <div class="row footer__row">
             <a href="#" class="footer__anchor">
                 <figure class="footer__logo">
-                    <img src="/assets/temp logo.png" class="footer__logo--image" alt="">
+                    <img src="/assets/Free_Sample_By_Wix.jfif" class="footer__logo--image" alt="">
                 </figure>
                 <span class="footer__logo--popper">
                     Top ⇮
                 </span>
             </a>
             <div class="footer__social--list">
-            
-                <a href="https://github.com/BoominHutJr/" 
-                class="footer__social--link" target="blank">GitHub</a>
-                
-                <a href="www.linkedin.com/in/aymanfahsi" 
-                class="footer__social--link" target="blank">LinkedIn</a>
-                
-                <a href="mailto:afahsi@hawk.iit.edu" 
-                class="footer__social--link" target="blank">Email</a>
 
-                <a href="assets/Resume Ayman Fahsi (Summer 2021).pdf" 
-                class="footer__social--link " target="blank">Resume</a>
+                <a href="https://github.com/BoominHutJr/" class="footer__social--link" target="blank">GitHub</a>
+
+                <a href="www.linkedin.com/in/aymanfahsi" class="footer__social--link" target="blank">LinkedIn</a>
+
+                <a href="mailto:afahsi@hawk.iit.edu" class="footer__social--link" target="blank">Email</a>
+
+                <a href="assets/Resume Ayman Fahsi (Summer 2021).pdf" class="footer__social--link "
+                    target="blank">Resume</a>
             </div>
             <div class="footer_copyright">Copyright © 2021 Ayman Fahsi</div>
         </div>
-        
+
     </footer>
 
 </body>

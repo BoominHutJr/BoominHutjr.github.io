@@ -44,6 +44,7 @@ li{
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
+    padding: 0 16px;
 }
 
 .text--color{
@@ -51,7 +52,7 @@ li{
 }
 
 section:nth-child(even){
-    background-color: rgb(228, 222, 222);
+    background-color:rgb(226, 224, 224);
 }
 
 .container{
@@ -72,6 +73,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12px;
 }
 
 .nav__link--list{
@@ -246,7 +248,7 @@ nav{
 }
 
 .project:hover .project__wrapper:before{
-    opacity: 70%;
+    opacity: 80%;
     
 }
 
@@ -312,7 +314,7 @@ footer{
     display:flex;   
     width: 100%;
     width: 500px;
-    justify-content:space-between;
+    justify-content:space-around;
 
 }
 
@@ -355,4 +357,56 @@ footer{
 .footer__anchor:hover .footer__logo--popper{
     transform: translateX(60px);
     opacity: 1;
+}
+
+/* smaller screens */
+@media (max-width: 786px) {
+    nav{
+        height: 68px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .about-me__intro-text{
+        font-size: 18px;
+    }
+    .project__description--para{
+        font-size: 14px;
+    }
+    .project__description{
+        left:30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .nav__link:not(:last-child){
+        display: None;
+    }
+
+    .project__description--para{
+        display: none;
+    }
+    
+     .project__description--links{
+         display: flex;
+         justify-content: center;
+     }
+
+     .project__description--subtitle{
+        text-align: center;
+     }
+
+    .project__description--title{
+        text-align: center;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .project__description{
+        padding: 0;
+        left:0;
+        width: 100%;
+    }
 }
