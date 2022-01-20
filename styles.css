@@ -252,6 +252,7 @@ nav{
     
 }
 
+
 .project:hover .project__image{
     transform: scale(1.07);
     filter: blur(10%);
