@@ -252,7 +252,7 @@ nav{
     
 }
 
-.project:hover .project:active .project__image{
+.project:hover.project__image{
     transform: scale(1.07);
     filter: blur(10%);
 }
@@ -272,7 +272,7 @@ nav{
     transition: transform 450ms, opacity 300ms;
 }
 
-.project:hover .project:active .project__description{
+.project:hover .project__description{
     opacity: 1;
     transform: translateY(-50%);
 }
